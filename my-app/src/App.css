@@ -1,0 +1,234 @@
+/* Основные стили для страницы */
+body {
+  display: flex; /* Используем flexbox для центрирования контента */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  height: 100vh; /* Высота страницы равна высоте окна браузера */
+  background-color: #FEDAA0; /* Основной фон страницы */
+  margin: 0; /* Убираем отступы по умолчанию */
+  padding: 0; /* Убираем внутренние отступы по умолчанию */
+  font-family: 'Arial', sans-serif; /* Шрифт по умолчанию */
+}
+
+/* Стили для основного контейнера приложения */
+.App {
+  text-align: center; /* Выравнивание текста по центру */
+  background-color: #FFFFFF; /* Фон контента */
+  padding: 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругление углов */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+  width: 100%; /* Ширина контейнера */
+  max-width: 600px; /* Максимальная ширина контейнера */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+  color: #DF5958; /* Цвет текста заголовков */
+}
+
+/* Стили для списков */
+ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внутренние отступы */
+}
+
+/* Стили для элементов списка */
+li {
+  margin: 10px 0; /* Отступы между элементами списка */
+}
+
+/* Основные стили для кнопок */
+button {
+  border: none; /* Убираем границу */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  margin: 5px; /* Отступы между кнопками */
+}
+
+/* Стили для кнопок с одиночным выбором */
+button.single-option {
+  background-color: #FF9647; /* Цвет фона */
+  color: #FFFFFF; /* Цвет текста */
+}
+
+/* Стили для кнопок с одиночным выбором при наведении */
+button.single-option:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+}
+
+/* Стили для кнопок с множественным выбором */
+button.multiple-option {
+  background-color: #FFFFFF; /* Цвет фона */
+  color: #000000; /* Цвет текста */
+  border: 1px solid #000000; /* Граница */
+}
+
+/* Стили для кнопок с множественным выбором при наведении */
+button.multiple-option:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+  color: #FFFFFF; /* Цвет текста при наведении */
+}
+
+/* Стили для кнопки "Ответить" */
+button.submit-answer {
+  background-color: #954C89; /* Цвет фона */
+  color: #FFFFFF; /* Цвет текста */
+}
+
+/* Стили для кнопки "Ответить" при наведении */
+button.submit-answer:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+}
+
+/* Стили для шапки */
+.header {
+  background-color: #954C89; /* Цвет фона шапки */
+  color: #FFFFFF; /* Цвет текста в шапке */
+  padding: 10px 0; /* Внутренние отступы */
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Прикрепляем к верхней части страницы */
+  left: 0; /* Прикрепляем к левой части страницы */
+  width: 100%; /* Ширина шапки */
+  text-align: center; /* Выравнивание текста по центру */
+  z-index: 1000; /* Уровень слоя для отображения поверх других элементов */
+  font-family: 'Arial Black', sans-serif; /* Шрифт */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+/* Стили для кнопки "Начать" */
+.start-button {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.start-button button {
+  background-color: #954C89; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 15px 30px; /* Внутренние отступы */
+  font-size: 1.2em; /* Размер текста */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Стили для кнопки "Начать" при наведении */
+.start-button button:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+}
+
+/* Стили для контейнера викторины */
+.quiz-container {
+  display: flex; /* Используем flexbox */
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: center; /* Горизонтальное центрирование */
+}
+
+/* Стили для контейнера вопроса */
+.question-container {
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стили для текста вопроса */
+.question-text {
+  font-size: 1.2em; /* Размер текста */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для контейнера с вариантами ответа */
+.options-container {
+  display: flex; /* Используем flexbox */
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: center; /* Горизонтальное центрирование */
+}
+
+/* Стили для кнопок вариантов ответа */
+.option-button {
+  width: 200px; /* Ширина кнопок */
+}
+
+/* Стили для поля ввода ответа */
+.input-answer {
+  background-color: #FFFFFF; /* Цвет фона */
+  color: #000000; /* Цвет текста */
+  border: 1px solid #000000; /* Граница */
+  padding: 10px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругление углов */
+  margin: 5px; /* Отступы */
+  width: 200px; /* Ширина поля ввода */
+}
+
+/* Стили для счетчика очков */
+.score-counter {
+  font-size: 1.2em; /* Размер текста */
+  font-weight: bold; /* Жирный шрифт */
+  margin-bottom: 20px; /* Отступ снизу */
+  color: #954C89; /* Цвет текста */
+}
+
+/* Стили для текста прогресса */
+.progress-text {
+  text-align: center; /* Выравнивание текста по центру */
+  margin-bottom: 20px; /* Отступ снизу */
+  font-size: 1.2em; /* Размер текста */
+  color: #954C89; /* Цвет текста */
+}
+
+/* Анимация исчезновения текста прогресса */
+@keyframes fadeOut {
+  from { opacity: 1; } /* Начальная прозрачность */
+  to { opacity: 0; } /* Конечная прозрачность */
+}
+
+/* Стили для текста прогресса при исчезновении */
+.progress-text.fade-out {
+  animation: fadeOut 0.001s ease-in-out; /* Анимация исчезновения */
+  opacity: 0; /* Прозрачность */
+}
+
+/* Стили для кнопки "Назад" */
+.back-button {
+  background-color: #954C89; /* Цвет фона */
+  color: white; /* Цвет текста */
+  padding: 10px 20px; /* Внутренние отступы */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Стили для кнопки "Назад" при наведении */
+.back-button:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+}
+
+/* Стили для кнопки "Начать заново" */
+.restart-button {
+  background-color: #954C89; /* Цвет фона */
+  color: #FFFFFF; /* Цвет текста */
+  border: none; /* Убираем границу */
+  padding: 10px 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стили для кнопки "Начать заново" при наведении */
+.restart-button:hover {
+  background-color: #F489BF; /* Цвет фона при наведении */
+}
+
+/* Стили для контейнера прогресс-бара */
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0; /* Цвет фона прогресс-бара */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Стили для самого прогресс-бара */
+.progress-bar {
+  height: 100%;
+  background-color: #954C89; /* Цвет заполнения прогресс-бара */
+  transition: width 0.3s ease-in-out; /* Плавное изменение ширины */
+}
